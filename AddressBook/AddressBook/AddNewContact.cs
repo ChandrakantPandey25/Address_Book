@@ -7,7 +7,7 @@ namespace AddressBook
     class AddNewContact
     {
         Dictionary<string, string> Contacts = new Dictionary<string, string>();
-        Dictionary<string, Dictionary<string, string>> AddressBook = new Dictionary<string, Dictionary<string, string>>();
+        
         public AddNewContact()
         {
             Console.WriteLine("Add the information required to enter the contact ");
@@ -38,10 +38,7 @@ namespace AddressBook
             Console.WriteLine("Email:");
             Contacts.Add("Email", Console.ReadLine());
 
-            Contacts.TryGetValue("First Name", out String FirstName);
-            Contacts.TryGetValue("Last Name", out String LastName);
-            AddressBook.Add(FirstName + " " + LastName, Contacts);
-            Console.WriteLine("contact added in the Address Book");
+            
         }
     }
 }
