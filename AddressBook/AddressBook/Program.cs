@@ -11,6 +11,7 @@ namespace AddressBook
             Console.WriteLine("Enter 2 to Add new contact");
             Console.WriteLine("Enter 3 to edit contact");
             Console.WriteLine("Enter 4 to delete contact");
+            Console.WriteLine("Enter 6 to create Address book System");
 
             switch(Convert.ToInt32(Console.ReadLine()))
             {
@@ -28,6 +29,10 @@ namespace AddressBook
                 case 4:
 
                     DeleteContact delete = new DeleteContact();
+                    break;
+                case 6:
+
+                    AddressBookSystem abs = new AddressBookSystem();
                     break;
                 default:
                     Console.WriteLine("Enter valid number!!");
