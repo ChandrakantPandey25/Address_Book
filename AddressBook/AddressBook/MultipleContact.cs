@@ -4,11 +4,11 @@ using System.Text;
 
 namespace AddressBook
 {
-    class AddNewContact
+    class MultipleContact
     {
         Dictionary<string, string> Contacts = new Dictionary<string, string>();
         Dictionary<string, Dictionary<string, string>> AddressBook = new Dictionary<string, Dictionary<string, string>>();
-        public AddNewContact()
+        public MultipleContact()
         {
             Console.WriteLine("Add the information required to enter the contact ");
 

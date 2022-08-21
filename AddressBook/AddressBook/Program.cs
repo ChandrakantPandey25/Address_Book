@@ -19,7 +19,7 @@ namespace AddressBook
                     Console.WriteLine("Contact created");
                     break;
                 case 2:
-                    AddNewContact newContact = new AddNewContact();
+                    MultipleContact newContact = new MultipleContact();
                     break;
                 case 3:
                    
