@@ -9,6 +9,7 @@ namespace AddressBook
             Console.WriteLine("Welcome to Address Book Program!!");
             Console.WriteLine("Enter 1 to Create contact");
             Console.WriteLine("Enter 2 to Add new contact");
+            Console.WriteLine("Enter 3 to edit contact");
 
             switch(Convert.ToInt32(Console.ReadLine()))
             {
@@ -18,6 +19,10 @@ namespace AddressBook
                     break;
                 case 2:
                     AddNewContact newContact = new AddNewContact();
+                    break;
+                case 3:
+                   
+                    EditContact edit = new EditContact();
                     break;
                 default:
                     Console.WriteLine("Enter valid number!!");
